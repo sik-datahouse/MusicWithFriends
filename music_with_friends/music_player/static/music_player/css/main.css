@@ -1,3 +1,13 @@
+/*COLOR PALETTE: https://coolors.co/248232-2ba84a-253030-040f0f-fcfffc*/
+:root {
+    --main-color: #248232;
+    --secondary-color: #2BA84A;
+    --main-background-color: #253030;
+    --secondary-background-color: #040F0F;
+    --white: #FCFFFC;
+
+}
+
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.ttf');
@@ -18,20 +28,21 @@ body {
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    background-color: var(--main-background-color);
 }
 
 .home-title-background {
     height: 100vh;
-    background-color: transparent;
+    background-color: rgba(0,0,0, 0.3);
 }
 
 .home-title {
     position: absolute;
     top: 40%;
     left: 39%;
-    color: #FFF;
+    color: var(--white);
     padding: 15px 10px;
-    border: 3px #FFF solid;
+    border: 3px var(--white) solid;
     border-radius: 5px;
     font-size: 3rem;
 }
