@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'music_with_friends.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'djongo',
-        'NAME': 'music_with_friends',
+        'NAME': 'django_mongodb_engine',
         'USER': 'root',
         'PASSWORD': 'test123',
         'HOST': '127.0.0.1',
