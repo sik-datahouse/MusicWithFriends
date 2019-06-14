@@ -1,16 +1,11 @@
-{% extends "music_player/base.html" %}
-{% load static %}
-
-{% block scripts %}
+{% extends "music_player/base.html" %} {% load static %} {% block scripts %}
 <link rel="stylesheet" type="text/css" href="{% static 'music_player/css/simple-grid.min.css' %}" />
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="{% static 'music_player/css/main.css' %}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="{% static 'music_player/js/parallax.min.js' %}"></script>
 <script src="{% static 'music_player/js/floating-label.js' %}"></script>
-{% endblock scripts %}
-
-{% block content %}
+{% endblock scripts %} {% block content %}
 <div class="container">
     <section id="login">
         <div class="row">
@@ -23,9 +18,10 @@
                         <input type="text" id="username" data-placeholder="Enter Username or E-Mail...">
                     </div>
                     <div class="float-container">
-                            <label for="password">Password</label>
-                            <input type="password" id="passwords" data-placeholder="Enter Password...">
-                        </div>
+                        <label for="password">Password</label>
+                        <input type="password" id="passwords" data-placeholder="Enter Password...">
+                    </div>
+                    <button class="button text-regular">Submit</button>
                 </div>
             </div>
             <div class="col-2"></div>

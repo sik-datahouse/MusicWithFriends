@@ -130,7 +130,7 @@ section:last-of-type {
 }
 
 .float-container {
-    border: solid 1px #ccc;
+    border: solid 1px var(--white);
     padding: 0 8px;
     position: relative;
     margin: 10px 0;
