@@ -1,27 +1,41 @@
 /*COLOR PALETTE: https://coolors.co/248232-2ba84a-253030-040f0f-fcfffc*/
+
 :root {
     --main-color: #248232;
     --secondary-color: #2BA84A;
     --main-background-color: #253030;
     --secondary-background-color: #040F0F;
     --white: #FCFFFC;
-
 }
 
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-.material-icons.md-120 { font-size: 120px; }
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.material-icons.md-120 {
+    font-size: 120px;
+}
 
 .presentation-icon {
     background-color: var(--secondary-background-color);
     border-radius: 50%;
     padding: 9px;
-    box-shadow: 0 0 8px  var(--white);
-	-moz-box-shadow: 0 0 8px var(--white);
-	-webkit-box-shadow: 0 0 8px  var(--white);
-    -o-box-shadow: 0 0 8px  var(--white); 
+    box-shadow: 0 0 8px var(--white);
+    -moz-box-shadow: 0 0 8px var(--white);
+    -webkit-box-shadow: 0 0 8px var(--white);
+    -o-box-shadow: 0 0 8px var(--white);
     margin-top: 20%;
 }
 
@@ -52,12 +66,13 @@ html body {
 
 .home-title-background {
     height: 100vh;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .home-title-container {
     margin-top: 22% !important;
 }
+
 .home-title {
     color: var(--white);
     padding: 15px 10px;
@@ -65,14 +80,16 @@ html body {
     border-radius: 5px;
     font-size: 3rem;
 }
+
 .home-floating-arrow-container {
     margin-top: 22% !important;
 }
+
 .home-title-floating-arrow {
     -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
     -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
     animation: floating-arrow 1.6s infinite ease-in-out 0s;
-    color: var(--white); 
+    color: var(--white);
 }
 
 section {
@@ -93,7 +110,6 @@ section:last-of-type {
     color: var(--white);
     font-family: 'Roboto Regular';
     font-size: 2rem;
-    
 }
 
 .align-center {
@@ -111,4 +127,34 @@ section:last-of-type {
 .main-button {
     padding: 20px 25px;
     font-size: 2rem;
+}
+
+.float-container {
+    border: solid 1px #ccc;
+    padding: 0 8px;
+    position: relative;
+    margin: 10px 0;
+}
+
+.float-container input {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    margin: 16px 0 10px;
+    outline: 0;
+    background-color: var(--main-background-color);
+    color: var(--main-color)
+}
+
+label {
+    font-size: 16px;
+    position: absolute;
+    transform-origin: top left;
+    transform: translate(0, 16px) scale(1);
+    transition: all .1s ease-in-out;
+    color: var(--secondary-color);
+}
+
+.float-container.active label {
+    transform: translate(0, 4px) scale(.75);
 }

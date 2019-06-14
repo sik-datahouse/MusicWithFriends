@@ -7,17 +7,28 @@
 <link rel="stylesheet" type="text/css" href="{% static 'music_player/css/main.css' %}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="{% static 'music_player/js/parallax.min.js' %}"></script>
+<script src="{% static 'music_player/js/floating-label.js' %}"></script>
 {% endblock scripts %}
 
 {% block content %}
 <div class="container">
     <section id="login">
         <div class="row">
-            <div class="col-3"></div>
-            <div class="col-6">
-                <h2>Login</h2>
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="container">
+                    <h2>Login</h2>
+                    <div class="float-container">
+                        <label for="username">Username / E-Mail</label>
+                        <input type="text" id="username" data-placeholder="Enter Username or E-Mail...">
+                    </div>
+                    <div class="float-container">
+                            <label for="password">Password</label>
+                            <input type="password" id="passwords" data-placeholder="Enter Password...">
+                        </div>
+                </div>
             </div>
-            <div class="col-3"></div>
+            <div class="col-2"></div>
         </div>
     </section>
 </div>
