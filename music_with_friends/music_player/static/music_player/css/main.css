@@ -8,6 +8,23 @@
 
 }
 
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-120 { font-size: 120px; }
+
+.presentation-icon {
+    background-color: var(--secondary-background-color);
+    border-radius: 50%;
+    padding: 9px;
+    box-shadow: 0 0 8px  var(--white);
+	-moz-box-shadow: 0 0 8px var(--white);
+	-webkit-box-shadow: 0 0 8px  var(--white);
+    -o-box-shadow: 0 0 8px  var(--white); 
+    margin-top: 20%;
+}
+
 @font-face {
     font-family: 'Roboto-Regular';
     src: url('../fonts/Roboto-Regular.ttf');
@@ -23,8 +40,10 @@
     src: url('../fonts/Roboto-Bold.ttf');
 }
 
-body {
+html body {
+    height: unset;
     font-family: 'Roboto-Regular';
+    color: var(--white);
     font-size: 1rem;
     margin: 0;
     padding: 0;
@@ -36,13 +55,60 @@ body {
     background-color: rgba(0,0,0, 0.3);
 }
 
+.home-title-container {
+    margin-top: 22% !important;
+}
 .home-title {
-    position: absolute;
-    top: 40%;
-    left: 39%;
     color: var(--white);
     padding: 15px 10px;
     border: 3px var(--white) solid;
     border-radius: 5px;
     font-size: 3rem;
+}
+.home-floating-arrow-container {
+    margin-top: 22% !important;
+}
+.home-title-floating-arrow {
+    -webkit-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    -o-animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    animation: floating-arrow 1.6s infinite ease-in-out 0s;
+    color: var(--white); 
+}
+
+section {
+    margin-top: 10%;
+}
+
+section:last-of-type {
+    margin-bottom: 10%;
+}
+
+.text-regular {
+    color: var(--white);
+    font-family: 'Roboto Regular';
+    font-size: 1rem;
+}
+
+.title-regular-bold {
+    color: var(--white);
+    font-family: 'Roboto Regular';
+    font-size: 2rem;
+    
+}
+
+.align-center {
+    text-align: center;
+}
+
+.button {
+    background-color: var(--main-background-color);
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.main-button {
+    padding: 20px 25px;
+    font-size: 2rem;
 }
