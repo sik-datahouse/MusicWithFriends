@@ -14,18 +14,33 @@
                 <div class="container">
                     <h2>Login</h2>
                     <div class="float-container">
-                        <label for="username">Username / E-Mail</label>
+                        <label id="labelUsername" for="username">Username / E-Mail</label>
                         <input type="text" id="username" data-placeholder="Enter Username or E-Mail...">
                     </div>
                     <div class="float-container">
-                        <label for="password">Password</label>
-                        <input type="password" id="passwords" data-placeholder="Enter Password...">
+                        <label id="labelPassword" for="password">Password</label>
+                        <input type="password" id="password" data-placeholder="Enter Password...">
                     </div>
-                    <button class="button text-regular">Submit</button>
+                    <button id="submit" class="button text-regular">Submit</button>
                 </div>
             </div>
             <div class="col-2"></div>
         </div>
     </section>
 </div>
+<script type="text/javascript">
+    const button = document.getElementById("submit")
+    const username = document.getElementById("username")
+    const password = document.getElementById("password")
+    button.addEventListener("click", function(e) {
+        if (username.value === '' || password.value === '') {
+            document.getElementById("labelUsername").classList.add("error-label")
+            document.getElementById("labelPassword").classList.add("error-label")
+            return
+        }
+        document.getElementById("labelUsername").classList.remove("error-label")
+        document.getElementById("labelPassword").classList.remove("error-label")
+        window.location.replace("/dashboard")
+    })
+</script>
 {% endblock content %}
