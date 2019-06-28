@@ -6,6 +6,7 @@
     --main-background-color: #253030;
     --secondary-background-color: #040F0F;
     --white: #FCFFFC;
+    --white-rgba: rgba(252, 255, 252, 0.5);
     --error-color: #D8000C;
 }
 
@@ -162,4 +163,48 @@ label {
 
 .error-label {
     color: var(--error-color)
+}
+
+#player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--secondary-background-color);
+    padding: 5px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    color: var(--white);
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    outline: none !important;
+}
+
+.button-container button#play,
+.button-container button#pause {
+    width: 60px;
+    height: 60px;
+}
+
+.button-container button#play i,
+.button-container button#pause i {
+    font-size: 48px;
+}
+
+.button-container button:hover {
+    background-color: var(--white-rgba)
+}
+
+.hidden {
+    display: none;
 }
