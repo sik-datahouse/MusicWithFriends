@@ -6,6 +6,7 @@
     --main-background-color: #253030;
     --secondary-background-color: #040F0F;
     --white: #FCFFFC;
+    --error-color: #D8000C;
 }
 
 .material-icons.md-18 {
@@ -157,4 +158,8 @@ label {
 
 .float-container.active label {
     transform: translate(0, 4px) scale(.75);
+}
+
+.error-label {
+    color: var(--error-color)
 }

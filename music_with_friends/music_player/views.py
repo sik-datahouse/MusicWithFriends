@@ -6,3 +6,6 @@ def home(request):
 
 def login(request):
     return render(request, 'music_player/login.html')
+
+def dashboard(request):
+    return render(request, 'music_player/dashboard.html')
